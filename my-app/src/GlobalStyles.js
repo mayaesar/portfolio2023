@@ -3,6 +3,9 @@ import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
     :root {
         --max-width: 1200px;
+        --primary-font-family: 'Poppins', sans-serif;
+        --light-secondary-color: #B428FF;
+        --dark-secondary-color: #EBD9FE;
     }
 
     /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -29,7 +32,6 @@ export default createGlobalStyle`
         vertical-align: baseline;
         box-sizing: border-box;
         font-family: var(--primary-font-family);
-        color: var(--primary-colour);
     }
     /* HTML5 display-role reset for older browsers */
     article, aside, details, figcaption, figure,

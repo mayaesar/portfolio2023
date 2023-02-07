@@ -2,12 +2,9 @@ import styled from "styled-components";
 import { Device } from "./Devices";
 
 
-const About = ({isDark}) => {
+const Experience = ({isDark}) => {
     return (
         <Wrapper>
-            <div className="title">
-                
-            </div>
         </Wrapper>
     );
 }
@@ -16,4 +13,4 @@ const Wrapper = styled.div`
 
 `;
 
-export default About;
+export default Experience;

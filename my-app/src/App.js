@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import GlobalStyles from "./GlobalStyles";
+import { Device } from "./Devices";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <GlobalStyles />
+      <div className="image">
+
+      </div>
+      <div className="typing">
+        
+      </div>
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.div`
+  width: 90%;
+  margin: auto;
+  padding-top: 40px;
+  .image{
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+  }
+`;
 
 export default App;

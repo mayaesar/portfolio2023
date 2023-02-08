@@ -3,6 +3,9 @@ import GlobalStyles from "./GlobalStyles";
 import { Device } from "./Devices";
 import Typing from "./components/Typing";
 import { useState } from "react";
+import About from "./sections/About";
+import Experience from "./sections/Experience";
+import Projects from "./sections/Projects";
 
 const App = () => {
   const [isDark, setDarkMode] = useState(false);
@@ -22,15 +25,15 @@ const App = () => {
         <span className="slider round"></span>
       </label>
       </center>
-      
+      <About isDark={isDark}/>
+      <Experience isDark={isDark}/>
+      <Projects isDark={isDark}/>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
   background-color: ${({ isDark }) => isDark ? "#333" : "#fff"};
-  width: 90%;
-  margin: auto;
   padding-top: 40px;
   .image{
     border: 1px solid black;

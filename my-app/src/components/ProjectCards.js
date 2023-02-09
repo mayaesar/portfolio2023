@@ -10,7 +10,7 @@ import GroupProject from "../projectsFolder/eComGroup/Screen_Shot_2022-11-17_at_
 import Modal from "./Modal";
 
 
-const PojectCards = ({isDark, filter}) => {
+const PojectCards = ({filter}) => {
 const [displaying, setDisplaying] = useState(null);
 const [show, setShow] = useState(false);
 const [modal, setModal] = useState(null);
@@ -82,12 +82,12 @@ const projects = [
         }
     }, [filter])
     return displaying?(
-        <Wrapper isDark={isDark}>
+        <Wrapper>
             <Modal show={show} modal={modal} onClose={() => setShow(false)}/>
             {displaying.map((project) => {
                 if(project.modal !== null){
                     return(
-                        <Card isDark={isDark} onClick={() => {
+                        <Card onClick={() => {
                             setShow(true) 
                             setModal(project.modal)}}>
                             <img src={project.img}/>
@@ -99,7 +99,7 @@ const projects = [
                 else{
                     return(
                         <a href={project.link} target="_blank">
-                            <Card isDark={isDark}>
+                            <Card>
                                 <img src={project.img}/>
                                 <p className="projectName">{project.title}</p>
                                 <p className="description">{project.description}</p>
@@ -126,7 +126,6 @@ const Wrapper = styled.div`
     gap: 5px;
     a{
         text-decoration: none;
-        color: ${({ isDark }) => isDark ? "#fff" : "#333"};
     }
 `;
 const Card = styled.div`
@@ -142,7 +141,7 @@ const Card = styled.div`
         padding-top: -5px;
         font-size: 14px;
         text-align: left;
-        color: ${({ isDark }) => isDark ? "#fff" : "#333"};
+        color: #fff;
     }
     .description{
         font-size: 14px;

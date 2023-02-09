@@ -3,10 +3,10 @@ import { Device } from "../Devices";
 import { useState } from "react";
 import PojectCards from "../components/ProjectCards";
 
-const Projects = ({isDark}) => {
+const Projects = () => {
     const [filter, setFilter] = useState('all');
     return (
-        <Wrapper isDark={isDark}>
+        <Wrapper>
             <div className="title">
                 <p>Some things I've built</p>
             </div>
@@ -18,7 +18,7 @@ const Projects = ({isDark}) => {
                 <li className={filter=='other'? 'filter':''} onClick={() => setFilter('other')}> Other </li>
             </div>
             <div className="cards">
-                <PojectCards isDark={isDark} filter={filter}/>
+                <PojectCards filter={filter}/>
             </div>
         </Wrapper>
     );
@@ -27,11 +27,11 @@ const Projects = ({isDark}) => {
 const Wrapper = styled.div`
     .title{
         float: right;
-        background-color: ${({ isDark }) => isDark ? "#EBD9FE" : "#B428FF"};
+        background-color: #EBD9FE;
         padding: 20px;
         width: 330px;
         font-size: 18px;
-        color: ${({ isDark }) => isDark ? "#333" : "#fff"};
+        color: #333;
         padding-left: 30px;
         border-radius: 50px;
         position: relative;
@@ -41,11 +41,11 @@ const Wrapper = styled.div`
     }
     .category{
         position: relative;
-        color: ${({ isDark }) => !isDark ? "#fff" : "#333"};
+        color: #333;
         width: 35%;
         left: -40px;
         padding-left: 50px;
-        background-color: ${({ isDark }) => isDark ? "#EBD9FE" : "#B428FF"};
+        background-color: #EBD9FE;
         border-radius: 40px;
         list-style: none;
     }

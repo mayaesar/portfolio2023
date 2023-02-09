@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Device } from "../Devices";
 
 
-const Contact = ({isDark}) => {
+const Contact = () => {
     return (
-        <Wrapper isDark={isDark}>
+        <Wrapper>
             <div className="title">
                 Let's Link!
             </div>
@@ -27,11 +27,11 @@ const Contact = ({isDark}) => {
 
 const Wrapper = styled.div`
     .title{
-        background-color: ${({ isDark }) => isDark ? "#EBD9FE" : "#B428FF"};
+        background-color: #EBD9FE;
         padding: 20px;
         width: 200px;
         font-size: 18px;
-        color: ${({ isDark }) => isDark ? "#333" : "#fff"};
+        color: #333;
         padding-left: 90px;
         border-radius: 50px;
         position: relative;
@@ -40,7 +40,7 @@ const Wrapper = styled.div`
         margin-top: 10px;
     }
     .description{
-        background-color: ${({ isDark }) => isDark ? "#EBD9FE" : "white"};
+        background-color: #EBD9FE;
         color: #333;
         font-size: 15px;
         padding: 20px;

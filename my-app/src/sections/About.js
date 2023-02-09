@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { Device } from "../Devices";
 
 
-const About = ({isDark}) => {
+const About = () => {
 
     return (
-        <Wrapper isDark={isDark}>
+        <Wrapper>
             <div className="title">
                 <p>About me</p>
             </div>
@@ -28,11 +28,11 @@ const About = ({isDark}) => {
 
 const Wrapper = styled.div`
     .title{
-        background-color: ${({ isDark }) => isDark ? "#EBD9FE" : "#B428FF"};
+        background-color: #EBD9FE;
         padding: 20px;
         width: 200px;
         font-size: 18px;
-        color: ${({ isDark }) => isDark ? "#333" : "#fff"};
+        color: #333;
         padding-left: 90px;
         border-radius: 50px;
         position: relative;
@@ -40,7 +40,7 @@ const Wrapper = styled.div`
         margin-top: 10px;
     }
     .paragraph{
-        background-color: ${({ isDark }) => isDark ? "#EBD9FE" : "white"};
+        background-color: #EBD9FE;
         font-size: 15px;
         padding: 20px;
         width: 80%;

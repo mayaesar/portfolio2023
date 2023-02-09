@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { Device } from "../Devices";
 
 
-const ExpCards = ({category, isDark}) => {
+const ExpCards = ({category}) => {
 
     switch(category){
         case 'skill':
             return(
-                <Wrapper isDark={isDark}>
+                <Wrapper>
                     <div className="info">
                         <li className="skill">JavaScript ~2yrs</li>
                         <li className="skill">HTML & CSS ~ 3yrs</li>
@@ -20,7 +20,7 @@ const ExpCards = ({category, isDark}) => {
             );
             case 'experience':
             return(
-                <Wrapper isDark={isDark}>
+                <Wrapper>
                     <div className="info">
                         <p className="company">Rudsak</p>
                         <p className="position">3rd key & Sales Associate</p>
@@ -45,7 +45,7 @@ const ExpCards = ({category, isDark}) => {
             );
             case 'freelance':
             return(
-                <Wrapper isDark={isDark}>
+                <Wrapper>
                     <div className="info">
                         <p className="freelance"> - Created an informational website for a start-up company</p>
                         <p className="freelance"> - Created HTML5 banners for an ad agency</p>
@@ -55,7 +55,7 @@ const ExpCards = ({category, isDark}) => {
             );
             default:
             return(
-                <Wrapper isDark={isDark}>
+                <Wrapper>
                     <div className="info">
                         <p className="program">Full-Stack Web Development Bootcamp</p>
                         <p className="school">Concordia University</p>
@@ -81,15 +81,15 @@ const Wrapper = styled.div`
     position: relative;
     top: -90px;
     left: -40px;
-    background-color: ${({ isDark }) => isDark ? "#EBD9FE" : "#B428FF"};
+    background-color: #EBD9FE;
     border-radius: 40px;
 
     .info{
         width: 80%;
-        color: ${({ isDark }) => !isDark ? "#fff" : "#333"};
+        color: #333;
         padding: 10px;
         margin-left: 45px;
-        border-bottom: ${({ isDark }) => isDark ? "1px solid #333" : "1px solid #fff"};
+        border-bottom: 1px solid #333;
     }
     .skill{
         list-style: circle;

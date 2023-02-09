@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useEffect, useState, useRef } from "react";
 
-const Typing = ({text, isDark}) => {
+const Typing = ({text}) => {
 
     const index = useRef(0);
     const [typing, setTyping] = useState('');
@@ -24,7 +24,7 @@ const Typing = ({text, isDark}) => {
 
 
     return (
-        <Wrapper isDark={isDark}>
+        <Wrapper>
             <span> {typing} </span>
             <span className="cursor">|</span>
         </Wrapper>

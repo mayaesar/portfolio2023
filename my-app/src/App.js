@@ -7,50 +7,45 @@ import About from "./sections/About";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import headerImg from "./assets/topImg.svg";
 
 const App = () => {
-  const [isDark, setDarkMode] = useState(false);
   return (
-    <Wrapper isDark={isDark}>
+    <Wrapper>
       <GlobalStyles />
       <div className="image">
-
+        <img src={headerImg}/>
       </div>
       <div className="text">
         <Typing text={"Maya Esar"}/>
+        <br/>
         <Typing text={"Full Stack Web Developer"}/>
       </div>
-      <center>
-        <label className="switch">
-        <input type="checkbox" checked={isDark} onChange={() => setDarkMode(!isDark)} />
-        <span className="slider round"></span>
-      </label>
-      </center>
-      <About isDark={isDark}/>
-      <Experience isDark={isDark}/>
-      <Projects isDark={isDark}/>
-      <Contact isDark={isDark}/>
+      <About/>
+      <Experience/>
+      <Projects/>
+      <Contact/>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
-  background-color: ${({ isDark }) => isDark ? "#333" : "#F3ECEF"};
-  padding-top: 40px;
+  background-color: #333;
   width: 100%;
   overflow-x: hidden;
-  .image{
-    border: 1px solid black;
+  .image img{
+    width: 100%;
     height: 200px;
-    width: 200px;
-    margin: auto;
+    object-fit: cover;
   }
   .text{
     padding-top: 20px;
     font-size: 24px;
     text-align: center;
-    color: ${({ isDark }) => isDark ? "#fff" : "#333"};
+    color: #fff;
   }
+
+
   // CSS for the toggle at the top ***
   .switch {
     position: relative;
@@ -94,9 +89,6 @@ const Wrapper = styled.div`
     background-color: var(--dark-secondary-color);
   }
   
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
   
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);

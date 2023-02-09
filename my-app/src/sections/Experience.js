@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { Device } from "../Devices";
 import ExpCards from "../components/ExpCards";
 
-const Experience = ({isDark}) => {
+const Experience = () => {
     const [selected, setSelected] = useState('education');
     return (
-        <Wrapper isDark={isDark}>
+        <Wrapper>
             <div className="title">
                 <p>Education & Experience </p>
             </div>
@@ -16,7 +16,7 @@ const Experience = ({isDark}) => {
                 <div className={selected=='experience'? 'selected':''} onClick={() => setSelected('experience')}>Experience -</div>
                 <div className={selected=='freelance'? 'selected':''} onClick={() => setSelected('freelance')}>Freelance -</div>
             </div>
-            <div className="card"><ExpCards category={selected} isDark={isDark}/></div>
+            <div className="card"><ExpCards category={selected}/></div>
             
         </Wrapper>
     );
@@ -26,11 +26,11 @@ const Wrapper = styled.div`
     padding-top: 20px;
     .title{
         float: right;
-        background-color: ${({ isDark }) => isDark ? "#EBD9FE" : "#B428FF"};
+        background-color: #EBD9FE;
         padding: 20px;
         width: 330px;
         font-size: 18px;
-        color: ${({ isDark }) => isDark ? "#333" : "#fff"};
+        color: #333;
         padding-left: 30px;
         border-radius: 50px;
         position: relative;
@@ -41,13 +41,13 @@ const Wrapper = styled.div`
         padding-top: 90px;
         padding-right: 6px;
         text-align: right;
-        color: ${({ isDark }) => !isDark ? "#333" : "#fff"};
+        color: #fff;
     }
     .category div{
         padding-top: 5px;
     }
     .selected{
-        color: ${({ isDark }) => isDark ? "#EBD9FE" : "#B428FF"};
+        color: #EBD9FE;
     }
 `;
 

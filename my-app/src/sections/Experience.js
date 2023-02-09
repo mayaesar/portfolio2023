@@ -16,7 +16,7 @@ const Experience = ({isDark}) => {
                 <div className={selected=='experience'? 'selected':''} onClick={() => setSelected('experience')}>Experience -</div>
                 <div className={selected=='freelance'? 'selected':''} onClick={() => setSelected('freelance')}>Freelance -</div>
             </div>
-            <div className="card"><ExpCards category={selected}/></div>
+            <div className="card"><ExpCards category={selected} isDark={isDark}/></div>
             
         </Wrapper>
     );
@@ -25,19 +25,20 @@ const Experience = ({isDark}) => {
 const Wrapper = styled.div`
     padding-top: 20px;
     .title{
+        float: right;
         background-color: ${({ isDark }) => isDark ? "#EBD9FE" : "#B428FF"};
         padding: 20px;
         width: 330px;
         font-size: 18px;
         color: ${({ isDark }) => isDark ? "#333" : "#fff"};
-        padding-left: 90px;
+        padding-left: 30px;
         border-radius: 50px;
         position: relative;
-        left: -30px;
+        right: -50px;
         margin-top: 10px;
     }
     .category{
-        padding-top: 20px;
+        padding-top: 90px;
         padding-right: 6px;
         text-align: right;
         color: ${({ isDark }) => !isDark ? "#333" : "#fff"};

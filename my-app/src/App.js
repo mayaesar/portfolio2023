@@ -6,6 +6,7 @@ import { useState } from "react";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
 
 const App = () => {
   const [isDark, setDarkMode] = useState(false);
@@ -28,12 +29,13 @@ const App = () => {
       <About isDark={isDark}/>
       <Experience isDark={isDark}/>
       <Projects isDark={isDark}/>
+      <Contact isDark={isDark}/>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
-  background-color: ${({ isDark }) => isDark ? "#333" : "#fff"};
+  background-color: ${({ isDark }) => isDark ? "#333" : "#F3ECEF"};
   padding-top: 40px;
   width: 100%;
   overflow-x: hidden;
@@ -45,7 +47,7 @@ const Wrapper = styled.div`
   }
   .text{
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     color: ${({ isDark }) => isDark ? "#fff" : "#333"};
   }

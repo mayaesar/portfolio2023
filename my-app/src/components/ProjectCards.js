@@ -11,11 +11,18 @@ import Modal from "./Modal";
 
 
 const PojectCards = ({isDark, filter}) => {
-    const [displaying, setDisplaying] = useState(null);
+const [displaying, setDisplaying] = useState(null);
 const [show, setShow] = useState(false);
 const [modal, setModal] = useState(null);
 
 const projects = [
+        // {img:null,
+    //     title:null,
+    //     category:null,
+    //     description:null,
+    //     modal:null,
+    //     link:null,
+    //     },
     {img:SchedulerProject,
         title:"Add me to your Schedule",
         category:"full",
@@ -31,7 +38,7 @@ const projects = [
         link:"https://github.com/mayaesar/GroupProject-EcomSite",
         },
     {img:GarfieldGame,
-        title:"Garfield Game",
+        title:"Garfield Game (not modile friendly)",
         category:"front",
         description:"This was a project at Concordia's bootcamp where I created a game that involved the player to use their keyboard.",
         modal:null,
@@ -58,14 +65,7 @@ const projects = [
         modal: CorbusierImg,
         link:null,
         },
-    // {img:null,
-    //     title:null,
-    //     category:null,
-    //     description:null,
-    //     modal:null,
-    //     link:null,
-    //     },
-]
+    ]
 
     useEffect(() => {
         if(filter === "all"){

@@ -35,6 +35,8 @@ const App = () => {
 const Wrapper = styled.div`
   background-color: ${({ isDark }) => isDark ? "#333" : "#fff"};
   padding-top: 40px;
+  width: 100%;
+  overflow-x: hidden;
   .image{
     border: 1px solid black;
     height: 200px;

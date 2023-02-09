@@ -12,9 +12,9 @@ const ExpCards = ({category, isDark}) => {
                         <li className="skill">JavaScript ~2yrs</li>
                         <li className="skill">HTML & CSS ~ 3yrs</li>
                         <li className="skill">Java ~ 2yrs</li>
-                        <li className="skill">React.Js > 1yr</li>
-                        <li className="skill">Node.Js > 1yr</li>
-                        <li className="skill">PHP > 1yr</li>
+                        <li className="skill">React.js ~ 1yr</li>
+                        <li className="skill">Node.js ~ 1yr</li>
+                        <li className="skill">PHP ~ 1yr</li>
                     </div>
                 </Wrapper>
             );
@@ -86,9 +86,10 @@ const Wrapper = styled.div`
 
     .info{
         width: 80%;
+        color: ${({ isDark }) => !isDark ? "#fff" : "#333"};
         padding: 10px;
         margin-left: 45px;
-        border-bottom: ${({ isDark }) => isDark ? "1px solid #333" : "1px solid #B428FF"};
+        border-bottom: ${({ isDark }) => isDark ? "1px solid #333" : "1px solid #fff"};
     }
     .skill{
         list-style: circle;

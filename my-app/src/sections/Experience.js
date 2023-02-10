@@ -1,53 +1,39 @@
 import { useState } from "react";
 import styled from "styled-components";
+import ExpDisplay from "../components/ExpDisplay";
 import { Device } from "../Devices";
-import ExpCards from "../components/ExpCards";
 
 const Experience = () => {
     const [selected, setSelected] = useState('education');
     return (
         <Wrapper>
-            <div className="title">
-                <p>Education & Experience </p>
+            <div className="selection">
+                <p className={selected == 'education'? "select":""} onClick={ () => setSelected('education')}>Education</p>
+                <p className={selected == 'experience'? "select":""} onClick={ () => setSelected('experience')}>Experience</p>
             </div>
-            <div className="category">
-                <div className={selected=='education'? 'selected':''} onClick={() => setSelected('education')}>Education -</div>
-                <div className={selected=='skill'? 'selected':''} onClick={() => setSelected('skill')}>Skills -</div>
-                <div className={selected=='experience'? 'selected':''} onClick={() => setSelected('experience')}>Experience -</div>
-                <div className={selected=='freelance'? 'selected':''} onClick={() => setSelected('freelance')}>Freelance -</div>
-            </div>
-            <div className="card"><ExpCards category={selected}/></div>
-            
+            <ExpDisplay selected={selected}/>
         </Wrapper>
     );
 }
 
 const Wrapper = styled.div`
-    padding-top: 20px;
-    .title{
-        float: right;
-        background-color: #EBD9FE;
-        padding: 20px;
-        width: 330px;
-        font-size: 18px;
-        color: #333;
-        padding-left: 30px;
-        border-radius: 50px;
-        position: relative;
-        right: -50px;
-        margin-top: 10px;
+    position: relative;
+    top: -365px;
+    background-color: #FA7268;
+    color: #333;
+    padding-left: 20px;
+
+    .selection{
+        padding-top: 20px;
+        width: 60%;
+        margin: auto;
+        font-size: 20px;
+        display: flex;
+        gap: 20px
     }
-    .category{
-        padding-top: 90px;
-        padding-right: 6px;
-        text-align: right;
+    .select{
         color: #fff;
-    }
-    .category div{
-        padding-top: 5px;
-    }
-    .selected{
-        color: #EBD9FE;
+
     }
 `;
 

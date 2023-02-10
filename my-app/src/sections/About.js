@@ -27,27 +27,20 @@ const About = () => {
 }
 
 const Wrapper = styled.div`
+    color: #333;
+    background: #EBD9FE;
+    position: relative;
+    top: -160px;
+    padding-bottom: 60px;
+    padding-top: 40px;
     .title{
-        background-color: #EBD9FE;
-        padding: 20px;
-        width: 200px;
-        font-size: 18px;
-        color: #333;
-        padding-left: 90px;
-        border-radius: 50px;
-        position: relative;
-        left: -30px;
-        margin-top: 10px;
+        padding-left: 20px;
+        font-size: 22px;
+        font-weight: 500;
     }
     .paragraph{
-        background-color: #EBD9FE;
-        font-size: 15px;
         padding: 20px;
-        width: 80%;
-        margin: auto;
-        position: relative;
-        top: 10px;
-        border-radius: 40px;
+        font-size: 15px;
     }
 
 `;

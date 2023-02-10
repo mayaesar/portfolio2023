@@ -15,7 +15,7 @@ const Typing = ({text}) => {
         const timeoutId = setTimeout(() => {
             setTyping(text.substr(0, index.current + 1));
             index.current += 1;
-        }, 200);
+        }, 150);
     
         return () => {
             clearTimeout(timeoutId);
@@ -34,7 +34,7 @@ const Typing = ({text}) => {
 const Wrapper = styled.div`
     .cursor{
         font-size: 20px;
-        color: var(--light-secondary-color);
+        color: #EBD9FE;
         animation: blink 1s linear infinite;
     }
 

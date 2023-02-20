@@ -43,7 +43,10 @@ const Wrapper = styled.div`
   width: 100%;
   overflow-x: hidden;
   max-width: 1200px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 2650px;
+  overflow-y: hidden;
 
   .vid video{
     width: 80vw;
@@ -98,6 +101,7 @@ const Wrapper = styled.div`
     }
   }
   @media ${Device.tablet}{
+    max-height: 3750px;
     .text1, .text2{
       font-size: 45px;
     }
@@ -119,6 +123,7 @@ const Wrapper = styled.div`
     }
   }
   @media ${Device.laptop}{
+    max-height: 3850px;
     .text1, .text2{
       font-size: 60px;
       padding-bottom: 20px;
@@ -137,6 +142,7 @@ const Wrapper = styled.div`
     }
   }
   @media ${Device.desktop}{
+    max-height: 4100px;
     padding-top: 30px;
     .vid video{
       width: 40%;

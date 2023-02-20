@@ -11,7 +11,7 @@ const ExpDisplay = ({selected}) => {
                 setDisplay(<div class="timeline">
                     <div className="container left">
                     <div className="content">
-                        <h2>07/2022-10/2022</h2>
+                        <h2>07/2022 - 10/2022</h2>
                         <p className="description">Full-Stack Web Development Bootcamp at Concordia University</p>
                     </div>
                     </div>

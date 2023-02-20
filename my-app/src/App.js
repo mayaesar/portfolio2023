@@ -7,7 +7,7 @@ import About from "./sections/About";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
-import headerImg from "./assets/topImg.svg";
+import headerVid from "./assets/headerVid.mp4";
 import waveTop from "./assets/layeredWaves.svg";
 import waveTwo from "./assets/wave.svg";
 import waveThree from "./assets/waveBottom.svg";
@@ -17,8 +17,8 @@ const App = () => {
   return (
     <Wrapper>
       <GlobalStyles />
-      <div className="image">
-        <img src={headerImg}/>
+      <div className="vid">
+        <video src={headerVid} type="video/mp4" autoPlay loop muted />
       </div>
       <div className="text1">
         <Typing text={"Hey, I'm Maya Esar"}/>
@@ -43,20 +43,21 @@ const Wrapper = styled.div`
   width: 100%;
   overflow-x: hidden;
   height: 100%;
-  .image img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+
+  .vid video{
+    width: 80vw;
+    margin-left: 10vw;
   }
   .text1{
-    padding-top: 10px;
     margin: 20px;
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 500;
     color: #fff;
   }
   .text2{
     margin: 20px;
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 500;
     color: #fff;
     text-align: right;
     height: 50px;

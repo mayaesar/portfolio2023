@@ -33,7 +33,7 @@ const Typing = ({text}) => {
 
 const Wrapper = styled.div`
     .cursor{
-        font-size: 20px;
+        font-size: 30px;
         color: #EBD9FE;
         animation: blink 1s linear infinite;
     }

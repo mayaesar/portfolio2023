@@ -25,23 +25,6 @@ const Wrapper = styled.div`
         font-weight: 500;
         color: #fff;
     }
-
-    /* .category{
-        position: relative;
-        color: #333;
-        width: 35%;
-        left: -40px;
-        top: 20px;
-        padding-left: 50px;
-        background-color: #EBD9FE;
-        border-radius: 40px;
-        list-style: none;
-    }
-    .category li{
-        position: relative;
-        top: -30px;
-        padding-bottom: 5px;
-    } */
 `;
 
 export default Projects;

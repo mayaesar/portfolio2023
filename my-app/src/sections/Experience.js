@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 
     .selection{
         padding-top: 20px;
-        width: 80%;
+        width: 100%;
         margin: auto;
         padding-left: 20px;
         font-size: 22px;

@@ -109,7 +109,7 @@ const Wrapper = styled.div`
     top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 5px;
     a, p{
         text-decoration: none;
         color: #fff;

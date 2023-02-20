@@ -32,6 +32,7 @@ const App = () => {
       <Experience/>
       <img id="wave3" src={waveThree}/>
       <Projects/>
+      <img id="wave4" src={waveTop}/>
       <Contact/>
     </Wrapper>
   );
@@ -41,6 +42,7 @@ const Wrapper = styled.div`
   background-color: #333;
   width: 100%;
   overflow-x: hidden;
+  height: 100%;
   .image img{
     width: 100%;
     height: 200px;
@@ -77,6 +79,13 @@ const Wrapper = styled.div`
     position: relative;
     top: -370px;
     height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  #wave4{
+    position: relative;
+    top: -500px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
   }

@@ -25,6 +25,18 @@ const Wrapper = styled.div`
         font-weight: 500;
         color: #fff;
     }
+    @media ${Device.tablet}{
+        height: 500px;
+        padding: 30px;
+        top: -830px;
+        padding-bottom: 90px;
+        .title{
+            font-size: 28px;
+            padding-bottom: 25px;
+            padding: 5px;
+        }
+    }
 `;
+
 
 export default Projects;

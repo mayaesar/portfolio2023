@@ -68,6 +68,22 @@ const Wrapper = styled.div`
         width: 40px;
         height: 40px;
     }
+
+    @media ${Device.tablet}{
+        top: -640px;
+        padding: 30px;
+        .title{
+            font-size: 28px;
+            padding-left: 35px;
+        }
+        .description{
+            font-size: 20px;
+        }
+        .media .social{
+            width: 70px;
+            height: 70px;
+        }
+    }
 `;
 
 export default Contact;

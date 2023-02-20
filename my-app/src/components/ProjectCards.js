@@ -106,13 +106,16 @@ const projects = [
 
 const Wrapper = styled.div`
     position: relative;
-    top: 40px;
+    top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
     a, p{
         text-decoration: none;
         color: #fff;
+    }
+    @media ${Device.tablet}{
+        gap: 20px;
     }
 `;
 const Card = styled.div`
@@ -134,6 +137,18 @@ const Card = styled.div`
         color: #FA7268;
     }
 
+    @media ${Device.tablet}{
+        width: 300px;
+        img{
+            width: 300px;
+            height: 170px;
+        }
+        .projectName{
+            padding-top: 10px;
+            font-size: 18px;
+        }
+        
+    }
 `;
 
 export default PojectCards;

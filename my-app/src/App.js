@@ -42,7 +42,6 @@ const Wrapper = styled.div`
   background-color: #333;
   width: 100%;
   overflow-x: hidden;
-  height: 100%;
 
   .vid video{
     width: 80vw;
@@ -89,6 +88,27 @@ const Wrapper = styled.div`
     height: 300px;
     width: 100%;
     object-fit: cover;
+  }
+  @media ${Device.tablet}{
+    .text1, .text2{
+      font-size: 40px;
+    }
+    #wave1{
+      height: 500px;
+      top: -200px;
+    }
+    #wave2{
+      top: -550px;
+      height: 400px;
+    }
+    #wave3{
+      top: -565px;
+      height: 400px;
+    }
+    #wave4{
+      height: 500px;
+      top: -630px;
+    }
   }
 `;
 

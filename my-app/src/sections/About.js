@@ -42,6 +42,20 @@ const Wrapper = styled.div`
         padding: 20px;
         font-size: 15px;
     }
+    @media ${Device.tablet}{
+        top: -210px;
+        height: 500px;
+        padding: 30px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        .title{
+            font-size: 28px;
+            padding-bottom: 10px;
+        }
+        .paragraph{
+            font-size: 18px;
+        }
+    }
 
 `;
 

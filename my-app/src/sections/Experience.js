@@ -23,7 +23,6 @@ const Wrapper = styled.div`
     color: #333;
     padding-left: 20px;
     padding-bottom: 40px;
-
     .selection{
         padding-top: 20px;
         width: 100%;
@@ -41,6 +40,13 @@ const Wrapper = styled.div`
     }
     .select{
         color: #fff;
+    }
+    @media ${Device.tablet}{
+        top: -560px;
+        .selection{
+            padding-left: 100px;
+            font-size: 28px;
+        }
     }
 `;
 

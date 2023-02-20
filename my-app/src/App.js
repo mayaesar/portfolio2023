@@ -10,6 +10,7 @@ import Contact from "./sections/Contact";
 import headerImg from "./assets/topImg.svg";
 import waveTop from "./assets/layeredWaves.svg";
 import waveTwo from "./assets/wave.svg";
+import waveThree from "./assets/waveBottom.svg";
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
       <About/>
       <img id="wave2" src={waveTwo}/>
       <Experience/>
+      <img id="wave3" src={waveThree}/>
       <Projects/>
       <Contact/>
     </Wrapper>
@@ -67,6 +69,13 @@ const Wrapper = styled.div`
   #wave2{
     position: relative;
     top: -350px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  #wave3{
+    position: relative;
+    top: -370px;
     height: 200px;
     width: 100%;
     object-fit: cover;

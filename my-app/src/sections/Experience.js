@@ -22,18 +22,25 @@ const Wrapper = styled.div`
     background-color: #FA7268;
     color: #333;
     padding-left: 20px;
+    padding-bottom: 40px;
 
     .selection{
         padding-top: 20px;
-        width: 60%;
+        width: 80%;
         margin: auto;
-        font-size: 20px;
+        padding-left: 20px;
+        font-size: 22px;
+        font-weight: 500;
         display: flex;
-        gap: 20px
+        gap: 20px;
+        padding-bottom: 25px;
+    }
+    .selection p:hover{
+        color: #fff;
+        
     }
     .select{
         color: #fff;
-
     }
 `;
 

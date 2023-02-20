@@ -42,6 +42,8 @@ const Wrapper = styled.div`
   background-color: #333;
   width: 100%;
   overflow-x: hidden;
+  max-width: 1200px;
+  margin: auto;
 
   .vid video{
     width: 80vw;
@@ -89,9 +91,15 @@ const Wrapper = styled.div`
     width: 100%;
     object-fit: cover;
   }
+  @media ${Device.mobileL}{
+    #wave3{
+      height: 400px;
+      top: -400px;
+    }
+  }
   @media ${Device.tablet}{
     .text1, .text2{
-      font-size: 40px;
+      font-size: 45px;
     }
     #wave1{
       height: 500px;
@@ -108,6 +116,45 @@ const Wrapper = styled.div`
     #wave4{
       height: 500px;
       top: -630px;
+    }
+  }
+  @media ${Device.laptop}{
+    .text1, .text2{
+      font-size: 60px;
+      padding-bottom: 20px;
+    }
+    #wave2{
+      top: -600px;
+      height: 400px;
+    }
+    #wave3{
+      top: -615px;
+      height: 600px;
+    }
+    #wave4{
+      height: 500px;
+      top: -670px;
+    }
+  }
+  @media ${Device.desktop}{
+    .vid video{
+      width: 50%;
+      margin-left: 25%;
+    }
+    #wave1{
+      height: 600px;
+    }
+    #wave2{
+      top: -600px;
+      height: 400px;
+    }
+    #wave3{
+      top: -615px;
+      height: 600px;
+    }
+    #wave4{
+      height: 500px;
+      top: -670px;
     }
   }
 `;

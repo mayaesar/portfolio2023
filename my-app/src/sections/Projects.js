@@ -25,6 +25,10 @@ const Wrapper = styled.div`
         font-weight: 500;
         color: #fff;
     }
+    @media ${Device.mobileL}{
+        top: -640px;
+        height: 300px;
+    }
     @media ${Device.tablet}{
         height: 500px;
         padding: 30px;
@@ -34,6 +38,14 @@ const Wrapper = styled.div`
             font-size: 28px;
             padding-bottom: 25px;
             padding: 5px;
+        }
+    }
+    @media ${Device.laptop}{
+        height: 500px;
+        top: -1050px;
+        padding: 70px;
+        .title{
+            font-size: 36px;
         }
     }
 `;

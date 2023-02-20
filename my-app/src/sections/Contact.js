@@ -38,24 +38,21 @@ const Wrapper = styled.div`
     top: -510px;
     padding-bottom: 60px;
     padding-top: 40px;
+    padding-left: 20px;
 
     .title{
-        padding-left: 20px;
+        
         font-size: 22px;
         font-weight: 500;
     }
     .description{
-        width: 90%;
         font-size: 16px;
-        margin: auto;
         padding-top: 20px;
     }
     .media{
         display: flex;
         gap: 15px;
         position: relative;
-        width: 90%;
-        margin: auto;
         padding-top: 30px;
     }
     a{
@@ -72,9 +69,9 @@ const Wrapper = styled.div`
     @media ${Device.tablet}{
         top: -640px;
         padding: 30px;
+        padding-left: 35px;
         .title{
             font-size: 28px;
-            padding-left: 35px;
         }
         .description{
             font-size: 20px;
@@ -82,6 +79,19 @@ const Wrapper = styled.div`
         .media .social{
             width: 70px;
             height: 70px;
+        }
+    }
+    @media ${Device.laptop}{
+        top: -680px;
+        padding: 30px;
+        padding-left: 60px;
+        .title{
+            padding-top: 30px;
+            font-size: 36px;
+            
+        }
+        .description{
+            font-size: 28px;
         }
     }
 `;

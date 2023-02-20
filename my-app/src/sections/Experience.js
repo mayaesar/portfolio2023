@@ -24,7 +24,7 @@ const Wrapper = styled.div`
     padding-left: 20px;
     padding-bottom: 40px;
     .selection{
-        padding-top: 20px;
+        padding-top: 50px;
         width: 100%;
         margin: auto;
         padding-left: 20px;
@@ -46,6 +46,14 @@ const Wrapper = styled.div`
         .selection{
             padding-left: 100px;
             font-size: 28px;
+        }
+    }
+    @media ${Device.laptop}{
+        top: -610px;
+        .selection{
+            padding-left: 100px;
+            font-size: 34px;
+            padding-top: 40px;
         }
     }
 `;

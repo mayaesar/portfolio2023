@@ -169,6 +169,18 @@ const ExpDisplay = ({selected}) => {
             left: 0%;
         }
         }
+        @media ${Device.laptop}{
+            padding: 40px;
+            padding-right: 90px;
+            font-size: 24px;
+            h2, p{
+                padding-bottom: 10px;
+                text-align: left;
+            }
+            .container {
+                width: 99%;
+            }
+        }
     `;
 
 

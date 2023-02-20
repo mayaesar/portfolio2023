@@ -147,7 +147,18 @@ const Card = styled.div`
             padding-top: 10px;
             font-size: 18px;
         }
-        
+    }
+    @media ${Device.laptop}{
+        width: 400px;
+        padding-top: 10px;
+        img{
+            width: 360px;
+            height: 200px;
+        }
+        .projectName{
+            padding-top: 15px;
+            font-size: 24px;
+        }
     }
 `;
 

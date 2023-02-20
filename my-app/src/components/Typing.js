@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useEffect, useState, useRef } from "react";
+import { Device } from "../Devices";
 
 const Typing = ({text}) => {
 
@@ -46,6 +47,13 @@ const Wrapper = styled.div`
             opacity: 0%;
         }
     }
+    @media ${Device.laptop}{
+        .cursor{
+            font-size: 60px;
+        }
+    }
 `;
+
+
 
 export default Typing;

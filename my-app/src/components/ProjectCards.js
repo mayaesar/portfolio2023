@@ -117,6 +117,10 @@ const Wrapper = styled.div`
     @media ${Device.tablet}{
         gap: 20px;
     }
+    @media ${Device.laptop}{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    }
 `;
 const Card = styled.div`
     padding: 2px;
@@ -158,6 +162,14 @@ const Card = styled.div`
         .projectName{
             padding-top: 15px;
             font-size: 24px;
+        }
+    }
+    @media ${Device.desktop}{
+        width: 300px;
+        padding-top: 10px;
+        img{
+            width: 300px;
+            height: 170px;
         }
     }
 `;

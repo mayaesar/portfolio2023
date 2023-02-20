@@ -48,6 +48,10 @@ const Wrapper = styled.div`
             font-size: 36px;
         }
     }
+    @media ${Device.laptop}{
+        height: 500px;
+        top: -1150px;
+    }
 `;
 
 

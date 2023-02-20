@@ -94,6 +94,13 @@ const Wrapper = styled.div`
             font-size: 28px;
         }
     }
+    @media ${Device.laptop}{
+        top: -1210px;
+        padding: 60px;
+        .description{
+            padding-bottom: 20px;
+        }
+    }
 `;
 
 export default Contact;

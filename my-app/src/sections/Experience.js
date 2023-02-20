@@ -56,6 +56,11 @@ const Wrapper = styled.div`
             padding-top: 40px;
         }
     }
+    @media ${Device.desktop}{
+        top: -710px;
+        padding-right: 200px;
+        padding-left: 50px;
+    }
 `;
 
 export default Experience;

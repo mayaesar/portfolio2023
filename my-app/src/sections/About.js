@@ -69,19 +69,10 @@ const Wrapper = styled.div`
             font-size: 24px;
         }
     }
-    @media ${Device.laptopL}{
-        top: -210px;
-        height: 500px;
-        padding: 30px;
-        padding-top: 90px;
-        padding-bottom: 90px;
-        .title{
-            font-size: 28px;
-            padding-bottom: 10px;
-        }
-        .paragraph{
-            font-size: 18px;
-        }
+    @media ${Device.desktop}{
+        top: -203px;
+        padding-right: 100px;
+        padding-left: 50px;
     }
 
 `;

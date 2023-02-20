@@ -137,24 +137,25 @@ const Wrapper = styled.div`
     }
   }
   @media ${Device.desktop}{
+    padding-top: 30px;
     .vid video{
-      width: 50%;
-      margin-left: 25%;
+      width: 40%;
+      margin-left: 30%;
     }
     #wave1{
       height: 600px;
     }
     #wave2{
-      top: -600px;
-      height: 400px;
+      top: -700px;
+      height: 500px;
     }
     #wave3{
-      top: -615px;
+      top: -715px;
       height: 600px;
     }
     #wave4{
-      height: 500px;
-      top: -670px;
+      height: 700px;
+      top: -1200px;
     }
   }
 `;
